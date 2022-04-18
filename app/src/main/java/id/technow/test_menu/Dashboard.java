@@ -1,6 +1,7 @@
 package id.technow.test_menu;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
@@ -11,9 +12,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import id.technow.test_menu.adapter.MenuAdapter;
-import id.technow.test_menu.api.Client;
-import id.technow.test_menu.model.ResponseGetData;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;

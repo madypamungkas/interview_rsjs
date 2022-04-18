@@ -18,7 +18,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import id.technow.test_menu.DetailMenu;
 import id.technow.test_menu.R;
 import id.technow.test_menu.model.ModelMenu;
 
