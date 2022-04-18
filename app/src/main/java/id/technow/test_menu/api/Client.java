@@ -10,7 +10,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Client {
-    // base url sudah sesuai
+
     private static final String BASE_URL = "https://mocki.io/v1/";
     private static Client mInstance;
     private Retrofit retrofit;
@@ -21,13 +21,13 @@ public class Client {
 
     private Client(){
         final OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                .connectTimeout(30, TimeUnit.SECONDS)
-                .readTimeout(30, TimeUnit.SECONDS)
-                .writeTimeout(30, TimeUnit.SECONDS)
+                .connectTimeout(, TimeUnit.SECONDS)
+                .readTimeout(, TimeUnit.SECONDS)
+                .writeTimeout(, TimeUnit.SECONDS)
                 .build();
 
         retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl("")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(okHttpClient)
                 .build();
